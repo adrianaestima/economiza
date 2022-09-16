@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">e-conomiza</string>
+    <string name="compare_todos_os_pre_os">comparetodososprecos</string>
+    <string name="sem_sair_de_casa">semsairdecasa</string>
+    <string name="entrar">entrar</string>
+    <string name="n_o_possui_uma_conta">naopossuiumaconta</string>
+    <string name="cadastre_se">cadastrese</string>
+    <string name="compras">Compras</string>
+    <string name="Compare_todos_os_prcos">Compare todos os preços</string>
+    <string name="Compare_todos_os_precos">Compare todos os preços</string>
+    <string name="omo_lavagem_perfeita">Omo lavagem perfeita</string>
+    <string name="comparar_pre_o">Comparar preço</string>
+    <string name="img_omo">img_omo</string>
+    <string name="nova_lista">Nova lista</string>
+    <string name="qual_ser_o_nome_da_lista">Qual será o nome da lista?</string>
+    <string name="criar">Criar</string>
+    <string name="criar_lista">Criar</string>
+    <string name="imagem_galeria">imagem_galeria</string>
+    <string name="salvar_lista">Salvar</string>
+
+    <string-array name="quantidade">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+</resources>
