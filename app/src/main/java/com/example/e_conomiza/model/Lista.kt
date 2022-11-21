@@ -5,5 +5,5 @@ import com.google.gson.annotations.SerializedName
 data class Lista(
 
     @SerializedName("id") var idLista: Int,
-    @SerializedName("nomeLista") val nomeLista : String
+    @SerializedName("nomeLista") var nomeLista : String
 )

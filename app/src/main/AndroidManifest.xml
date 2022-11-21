@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.e_conomiza">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:name=".MainActivity"
@@ -17,7 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Economiza"
         tools:targetApi="31">
-
+        <activity
+            android:name=".activity.ProdutosActivity"
+            android:exported="false" />
         <activity
             android:name=".activity.ListaActivity"
             android:exported="false" />

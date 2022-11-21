@@ -8,57 +8,58 @@
     android:background= "@drawable/bg">
 
     <TextView
-        android:id="@+id/txt_compare"
+        android:id="@+id/txt_economiza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="0dp"
-        android:text="@string/Compare_todos_os_precos"
-        android:textSize="36sp"
+        android:text="ECONOMIZA"
+        android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/img_compra"
         android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/txt_compare"
+        app:layout_constraintTop_toBottomOf="@id/img_compra"
         />
 
     <TextView
-        android:id="@+id/txt_sem_sair"
-        android:layout_width="wrap_content"
+        android:id="@+id/txt_compare"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="sem sair de casa"
-        android:textSize="28sp"
-        app:layout_constraintTop_toBottomOf="@id/txt_compare"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/txt_compare"
-        app:layout_constraintVertical_bias="0.759"
-        android:textColor="@color/white"/>
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Compare os preços sem sair de casa"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_economiza"
+        android:textColor="@color/white"
+        />
 
     <Button
         android:id="@+id/btn_entrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/entrar"
-        app:layout_constraintStart_toStartOf="@id/txt_sem_sair"
-        app:layout_constraintTop_toBottomOf="@id/txt_sem_sair"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/txt_compare"
+        app:layout_constraintTop_toBottomOf="@id/txt_compare"
         android:layout_marginTop="16dp"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
         android:background="@drawable/borda_arredondada"/>
 
-     <ImageView
+    <ImageView
         android:id="@+id/img_compra"
         android:layout_width="370dp"
         android:layout_height="455dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="0dp"
         android:contentDescription="@string/compras"
-        app:layout_constraintBottom_toTopOf="@+id/txt_compare"
+        app:layout_constraintBottom_toTopOf="@+id/txt_economiza"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90"
         app:srcCompat="@drawable/img_compra" />
 
     <TextView
@@ -66,9 +67,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="30dp"
         android:text="Não possui uma conta?"
         android:textSize="18sp"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/btn_entrar"
         app:layout_constraintStart_toStartOf="parent"
         />
@@ -77,12 +79,13 @@
         android:id="@+id/btn_cadastre_se"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
         android:background="@android:color/transparent"
         android:text="Cadastre-se"
-        android:textSize="16sp"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/btn_entrar"
         app:layout_constraintTop_toBottomOf="@id/btn_entrar" />

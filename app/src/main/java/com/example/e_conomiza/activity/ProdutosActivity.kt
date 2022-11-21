@@ -2,24 +2,23 @@ package com.example.e_conomiza.activity
 
 import android.content.Intent
 import android.content.SharedPreferences
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import com.example.e_conomiza.R
 
-class ListaActivity : AppCompatActivity() {
+class ProdutosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_lista)
-
-        // Declarando as variáveis
-        val txtNomeLista: TextView = findViewById(R.id.txt_nome_lista_nova)
-        val btn_finaliza: Button = findViewById(R.id.btn_finalizar)
+        setContentView(R.layout.activity_produtos)
 
         // Escondendo a barra de Ação
         supportActionBar!!.hide()
+
+        //Declarando as variáveis
+        val txtNomeLista: TextView = findViewById(R.id.txt_nome_lista_nova)
+
 
         //Recuperando o nome da lista criada
         val nomeListaSharedPreference: SharedPreferences =
@@ -29,17 +28,12 @@ class ListaActivity : AppCompatActivity() {
         //Imprimindo o nome da lista
         txtNomeLista.text = nomeLista
 
-        //Finalizando o app
-        btn_finaliza.setOnClickListener{
-            val intent = Intent(Intent.ACTION_MAIN)
-            intent.addCategory(Intent.CATEGORY_HOME)
-            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-            startActivity(intent)
-            finish();
 
-            Toast.makeText(this@ListaActivity,"Volte sempre", Toast.LENGTH_LONG).show()
+        val btnSalvarLista: Button = findViewById(R.id.btn_salvar_lista)
 
+        btnSalvarLista.setOnClickListener{
+            val x = Intent(this, ListaActivity::class.java)
+            startActivity(x)
         }
     }
-
 }

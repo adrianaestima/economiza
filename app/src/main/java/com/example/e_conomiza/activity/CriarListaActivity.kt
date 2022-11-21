@@ -5,7 +5,6 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -14,12 +13,10 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.e_conomiza.Interface.RetrofitFactory
 import com.example.e_conomiza.R
 import com.example.e_conomiza.model.Lista
-import com.example.e_conomiza.model.Produto
-import com.example.e_conomiza.model.ProdutoLista
+import com.google.gson.Gson
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.http.Body
 
 
 class CriarListaActivity : AppCompatActivity() {
@@ -58,32 +55,35 @@ class CriarListaActivity : AppCompatActivity() {
             Toast.makeText(this, "lista salva com sucesso", Toast.LENGTH_SHORT).show()
 
 
-            //Adicionando o nome da lista
+            //Gravando no Banco de dados o nome da lista
 
+            println(edtNomeLista.editableText.toString())
             val call = RetrofitFactory().listaApi().gravarLista(edtNomeLista.editableText.toString())
             call.enqueue(object : Callback<Lista> {
                 override fun onResponse(
                     call: Call<Lista>,
                     response: Response<Lista>
                 ) {
-                    val addedListaProduto = response.body()
                     response.body()?.let {
                         Log.i("nome", it.toString())
                         var listaNew = Lista(0,"")
                         listaNew.idLista = it.idLista
+                        listaNew.nomeLista = it.nomeLista
                         val editor2: SharedPreferences.Editor = listaId.edit()
                         editor2.putString("id_lista", listaNew.idLista.toString())
                         editor2.apply()
-                        Toast.makeText(this@CriarListaActivity, it.toString(), Toast.LENGTH_LONG)
-                            .show()
-                   } ?: Toast.makeText(
+                   } ?:
+                        println(response.errorBody().toString())
+
+                        Toast.makeText(
                         this@CriarListaActivity,
-                        "Erro ao gravar Lista",
+                        "Lista salva com sucesso",
                         Toast.LENGTH_LONG
                     ).show()
                 }
                 override fun onFailure(call: Call<Lista>, t: Throwable) {
                     t?.message?.let { it1 -> Log.e("Erro", it1) }
+                    println(t.toString())
                 }
 
             })

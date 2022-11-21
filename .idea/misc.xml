@@ -3,17 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1425" />
         <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/drawable/bg.xml" value="0.127" />
         <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/drawable/borda_arredondada.xml" value="0.115" />
+        <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1425" />
         <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/layout/activity_comparar_preco.xml" value="0.1" />
         <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/layout/activity_criar_lista.xml" value="0.1" />
-        <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/layout/activity_lista.xml" value="0.128" />
+        <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/layout/activity_lista.xml" value="0.264" />
         <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/layout/activity_lista_produtos.xml" value="0.20742753623188406" />
-        <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/layout/activity_main.xml" value="0.16" />
-        <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/layout/activity_nova_lista.xml" value="0.264" />
+        <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/layout/activity_nova_lista.xml" value="0.128" />
+        <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/layout/activity_produtos.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/layout/activity_recuperando_fotos.xml" value="0.1890625" />
         <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/layout/fragment_lista_list.xml" value="0.19791666666666666" />
-        <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/layout/produtos_itens.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/layout/produtos_itens.xml" value="0.1" />
+        <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/adria/AndroidStudioProjects/economiza2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>

@@ -11,6 +11,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        supportActionBar!!.hide()
+
         val btnEntrar: Button = findViewById(R.id.btn_entrar)
 
         btnEntrar.setOnClickListener{

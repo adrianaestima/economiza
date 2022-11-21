@@ -6,19 +6,19 @@ import retrofit2.Call
 
 interface ListaApi {
 
-    @POST("/lista")
-    fun gravarLista(@Body lista: String) : Call<Lista>
+    @POST("/Lista")
+    fun gravarLista(@Body nomeLista: String) : Call<Lista>
 
-    @GET("/lista/{lista}")
+    @GET("/Lista/{lista}")
     fun getLista(): List<Lista>
 
-    @GET("/lista/{id}")
+    @GET("/Lista/{id}")
     fun getListaId(toInt: Int)
 
-    @PUT("/lista/{id}")
+    @PUT("/Lista/{id}")
     fun updateLista()
 
-    @DELETE("/lista/{id}")
+    @DELETE("/Lista/{id}")
     fun deleteLista()
 
 }

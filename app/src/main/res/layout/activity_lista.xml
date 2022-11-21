@@ -7,10 +7,10 @@
     tools:context=".activity.ListaActivity">
 
     <TextView
-        android:id="@+id/txt_lista"
+        android:id="@+id/txt_nome_lista_nova"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@+id/edt_nome_lista"
+        android:text=" "
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,91 +19,164 @@
         android:layout_marginTop="36dp"/>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card_produto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        app:layout_constraintStart_toStartOf="@id/txt_lista"
-        app:layout_constraintTop_toBottomOf="@+id/txt_lista" >
-
-        <LinearLayout
-            android:id="@+id/linearLayout_produto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintStart_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/card_produto"
-            android:layout_marginTop="48dp"
-            tools:layout_editor_absoluteY="146dp">
-
-            <TextView
-                android:id="@+id/txt_detergente"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="120dp"
-                android:orientation="horizontal"
-                android:text="Detergente Ypê"/>
-
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="img_detergente"
-                app:srcCompat="@drawable/img_detergente"
-                tools:layout_editor_absoluteX="41dp"
-                tools:layout_editor_absoluteY="210dp"/>
-
-            <Spinner
-                android:id="@+id/prod_quant1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="24dp"
-                android:layout_marginBottom="24dp"
-                android:entries="@array/quantidade"
-                android:minHeight="48dp" />
-
-            <TextView
-                android:id="@+id/txt_omo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="120dp"
-                android:orientation="horizontal"
-                android:text="@string/omo_lavagem_perfeita"/>
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/img_omo"
-                app:srcCompat="@drawable/img_omo"
-                tools:layout_editor_absoluteX="41dp"
-                tools:layout_editor_absoluteY="210dp" />
-
-            <Spinner
-                android:id="@+id/prod_quant"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="24dp"
-                android:layout_marginBottom="24dp"
-                android:entries="@array/quantidade"
-                android:minHeight="48dp" />
-
-        </LinearLayout>
-
-    </com.google.android.material.card.MaterialCardView>
-    <Button
-        android:id="@+id/btn_salvar_lista"
+        android:id="@+id/card_lista_produto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:background="@drawable/borda_arredondada"
-        android:text="Salvar"
-        app:layout_constraintTop_toBottomOf="@id/card_produto"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_nome_lista_nova">
+
+
+        <TextView
+            android:id="@+id/txt_carrefour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:orientation="horizontal"
+            android:text="Carrefour"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="img_detergente"
+            app:srcCompat="@drawable/carrefour"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="210dp"/>
+
+        <TextView
+            android:id="@+id/txt_preco_lista1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$89,00"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="40dp"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_lista_produto2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="@id/card_lista_produto"
+        app:layout_constraintTop_toBottomOf="@+id/card_lista_produto" >
+
+        <TextView
+            android:id="@+id/txt_pao_de_acucar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:orientation="horizontal"
+            android:text="Pão de Açúcar"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="pao_de_acucar"
+            app:srcCompat="@drawable/pao_de_acucar"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <TextView
+            android:id="@+id/txt_preco_lista2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$100,00"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="40dp"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_lista_produto3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="@id/card_lista_produto2"
+        app:layout_constraintTop_toBottomOf="@+id/card_lista_produto2" >
+
+        <TextView
+            android:id="@+id/txt_extra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:orientation="horizontal"
+            android:text="Extra"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="79dp"
+            android:layout_height="77dp"
+            android:contentDescription="extra"
+            app:srcCompat="@drawable/logo_extra"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <TextView
+            android:id="@+id/txt_preco_lista3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$97,00"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="40dp"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_lista_produto4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="@id/card_lista_produto3"
+        app:layout_constraintTop_toBottomOf="@+id/card_lista_produto3" >
+
+        <TextView
+            android:id="@+id/txt_zonaSul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:orientation="horizontal"
+            android:text="Zona Sul"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="79dp"
+            android:layout_height="77dp"
+            android:contentDescription="logo_zonaSul"
+            app:srcCompat="@drawable/logo_zonasul"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <TextView
+            android:id="@+id/txt_preco_lista4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$102,00"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="40dp"/>
+
+    </com.google.android.material.card.MaterialCardView>
 
     <Button
         android:id="@+id/btn_finalizar"
@@ -112,9 +185,10 @@
         android:layout_marginTop="12dp"
         android:layout_marginStart="48dp"
         android:layout_marginEnd="48dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/borda_arredondada"
         android:text="Finalizar"
-        app:layout_constraintTop_toBottomOf="@id/btn_salvar_lista"
+        app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="48dp" />
 
 

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProdutosActivity">
+
+    <TextView
+        android:id="@+id/txt_nome_lista_nova"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_produto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_nome_lista_nova">
+
+        <ImageView
+            android:id="@+id/img_omo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/img_omo"
+            android:src="@drawable/img_omo_novo"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_getProd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Omo sabão em pó"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_descricao_produto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" sabão multiuso"
+            android:textSize="14sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="10dp"
+            android:maxLines="4"/>       <TextView
+            android:id="@+id/txt_preco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$:9,99"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="70dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_produto2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_produto">
+
+        <ImageView
+            android:id="@+id/img_bombril"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="img_bombril"
+            android:src="@drawable/img_bombril"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_getProd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bombril"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_descricao_produto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Esponja de aço"
+            android:textSize="14sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="10dp"
+            android:maxLines="4"/>
+
+        <TextView
+            android:id="@+id/txt_preco2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$:1,99"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="70dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_produto3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_produto2">
+
+        <ImageView
+            android:id="@+id/img_foto_detergente"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="detergente"
+            android:src="@drawable/img_detergente"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_getProd3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detergente Ypê"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_descricao_produto3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="10dp"
+            android:maxLines="4"
+            android:text="Detergente líquido clear 500ml"/>
+
+        <TextView
+            android:id="@+id/txt_preco3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$:2,99"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="70dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_produto4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_produto3">
+
+        <ImageView
+            android:id="@+id/img_agua_sanitaria"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="agua sanitaria"
+            android:src="@drawable/img_1"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_getProd4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Candida"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_descricao_produto4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Água sanitária super candida 1L"
+            android:textSize="14sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="10dp"
+            android:maxLines="4"/>
+
+        <TextView
+            android:id="@+id/txt_preco4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$:3,59"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="70dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_produto5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_produto4">
+
+        <ImageView
+            android:id="@+id/img_amaciante"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="amaciante"
+            android:src="@drawable/img_2"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_getProd5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amaciante Downy"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_descricao_produto5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amaciante Downy Concentrado Lírios do Campo - 1,5L"
+            android:textSize="14sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="10dp"
+            android:maxLines="4"/>
+
+        <TextView
+            android:id="@+id/txt_preco5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$:24,90"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="70dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_salvar_lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/borda_arredondada"
+        android:text="Salvar Lista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_produto5"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
